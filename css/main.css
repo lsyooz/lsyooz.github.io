@@ -1420,9 +1420,15 @@ pre code {
   display: inline-block;
 }
 .site-author-image {
-  border: 1px solid #eee;
+  display: block;
+  margin: 0 auto;
+  padding: $site-author-image-padding;
   max-width: 120px;
-  padding: 2px;
+  height: $site-author-image-height;
+  border: 1px solid #eee;
+/*start*/
+  border-radius: 60%;
+  transition: 2.5s all;
 }
 .site-author-name {
   color: var(--text-color);

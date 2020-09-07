@@ -6,7 +6,7 @@
   <link href="https://lsyooz.github.io/atom.xml" rel="self"/>
   
   <link href="https://lsyooz.github.io/"/>
-  <updated>2020-09-07T10:57:31.385Z</updated>
+  <updated>2020-09-07T13:24:59.102Z</updated>
   <id>https://lsyooz.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://lsyooz.github.io/2020/09/06/name/"/>
     <id>https://lsyooz.github.io/2020/09/06/name/</id>
     <published>2020-09-06T05:57:27.000Z</published>
-    <updated>2020-09-07T10:57:31.385Z</updated>
+    <updated>2020-09-07T13:24:59.102Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><p>正文就随便写写吧。微笑。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><p>正文就随便写写吧。微笑。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">pipeline &#123;</span><br><span class="line">  agent any</span><br><span class="line">  stages &#123;</span><br><span class="line">    stage(&#x27;Example&#x27;) &#123;</span><br><span class="line">      input &#123;</span><br><span class="line">        message <span class="string">&quot;Should we continue?&quot;</span></span><br><span class="line">        ok <span class="string">&quot;Yes, we should.&quot;</span></span><br><span class="line">        submitter <span class="string">&quot;alice,bob&quot;</span></span><br><span class="line">        parameters &#123;</span><br><span class="line">          string(name: &#x27;PERSON&#x27;, defaultValue: &#x27;Mr Jenkins&#x27;, description: &#x27;Who should I say hello to?&#x27;)</span><br><span class="line">             &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      steps &#123;</span><br><span class="line">         cho <span class="string">&quot;Hello, $&#123;PERSON&#125;, nice to meet you.&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
     <summary type="html">&lt;h3 id=&quot;小标题&quot;&gt;&lt;a href=&quot;#小标题&quot; class=&quot;headerlink&quot; title=&quot;小标题&quot;&gt;&lt;/a&gt;小标题&lt;/h3&gt;&lt;p&gt;正文就随便写写吧。微笑。&lt;/p&gt;
-</summary>
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas</summary>
       
     
     
