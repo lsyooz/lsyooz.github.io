@@ -6,7 +6,7 @@
   <link href="https://lsyooz.github.io/atom.xml" rel="self"/>
   
   <link href="https://lsyooz.github.io/"/>
-  <updated>2020-09-07T13:24:59.102Z</updated>
+  <updated>2020-09-08T13:31:30.797Z</updated>
   <id>https://lsyooz.github.io/</id>
   
   <author>
@@ -17,19 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>test</title>
+    <link href="https://lsyooz.github.io/2020/09/08/test/"/>
+    <id>https://lsyooz.github.io/2020/09/08/test/</id>
+    <published>2020-09-08T13:27:47.000Z</published>
+    <updated>2020-09-08T13:31:30.797Z</updated>
+    
+    <content type="html"><![CDATA[<p>突然心血来潮，又再整以前整了一半的hexo博客，主要是我有点复习资料没地方放，里面一堆公式csdn不知道能不能放</p><p>auto_excerpt整了半天就是没效果，在next的issue里发现是next新版本剔除了这个功能，认为插件能做的，为什么主题要做，这个功能还影响主题<br>大致了解了<br>早说嘛，那就用插件嘛，你倒是给我推荐一个呢<br>找了半天<br>那个什么hexo-auto-excerpt根本没法用，配置里面写了生成后没反应<br>然后找到一个hexo-excerpt</p><p>配置文件写进去总算有效果了</p><h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>从搭建到布置到GitHub花费时间大概用了五个小时，中间删除repo N次，localhost运行正常，git上出现过404页面、若干次README.md页面，本文将简略介绍搭建过程，主要内容是搭建过程中出现的问题解决方法。<br><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a> hexo官方文档<br><a href="https://c-axis.github.io/">https://c-axis.github.io/</a> 博客地址</p><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>安装Git，注册GitHub，并创建博客的repository<br>　　具体过程自行百度（注意点：repository的名称必须是　Name.GitHub.io）<br>安装Node <a href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a><br>　　下载了之后一直点就行了<br>安装hexo<br>　　创建一个文件夹hexo,存放hexo的配置文件，右键Git Bush Here执行下面的代码</p><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g npm install hexo --save hexo -v  <span class="comment"># 查看是否安装成功</span></span><br></pre></td></tr></table></figure><p>初始化仓库</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init yourname.github.io #建议和创建仓库时使用同一个</span><br><span class="line">npm install</span><br><span class="line">npm -v #查看npm版本</span><br><span class="line"></span><br><span class="line">hexo g   # 使用默认主题本地测试下</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>之后顺利的画就可以在本地 <a href="http://localhost:4000/">http://localhost:4000</a> 进行预览了<br>此时文件夹的目录如下：</p><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.├── _config.yml├── package.json├── scaffolds├── source<span class="params">|   ├── _drafts|</span>   └── _posts└── themes</span><br></pre></td></tr></table></figure><p>具体内容不做介绍有问题咨询度娘或者Google，这里离上传GitHub就不远了。<br>修改这里的_config.yml文件</p><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span>    <span class="symbol">type:</span> git    <span class="symbol">repo:</span> <span class="symbol">https:</span>/<span class="regexp">/github.com/yourname</span><span class="regexp">/yourname.github.io.git    branch: master</span></span><br></pre></td></tr></table></figure><p>写博客与发布 </p><p>经过上述步骤，本地博客已经完成，那么接下来就是写博客了。</p><p>你的博客文件需要存放到 xxx.github.io/source/_posts 文件夹中，在该文件夹下面你可以按照你的博客分类建立一系列的文件夹来管理博客原文件。</p><h3 id="1、在本地运行测试"><a href="#1、在本地运行测试" class="headerlink" title="1、在本地运行测试"></a>1、在本地运行测试</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure><h3 id="2、安装上传Git功能：-在浏"><a href="#2、安装上传Git功能：-在浏" class="headerlink" title="** 2、安装上传Git功能：**在浏"></a>** 2、安装上传Git功能：**在浏</h3>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;突然心血来潮，又再整以前整了一半的hexo博客，主要是我有点复习资料没地方放，里面一堆公式csdn不知道能不能放&lt;/p&gt;
+&lt;p&gt;auto_excerpt整了半天就是没效果，在next的issue里发现是next新版本剔除了这个功能，认为插件能做的，为什么主题要做，这个功能还影响主题&lt;br&gt;大致了解了&lt;br&gt;早说嘛，那就用插件嘛，你倒是给我推荐一个呢&lt;br&gt;找了半天&lt;br&gt;那个什么hexo-auto-excerpt根本没法用，配置里面写了生成后没反应&lt;br&gt;然后找到一个hexo-excerpt&lt;/p&gt;
+&lt;p&gt;配置文件写进去总算有效果了&lt;/p&gt;
+&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;从搭建到布置到GitHub花费时间大概用了五个小时，中间删除repo N次，localhost运行正常，git上出现过404页面、若干次README.md页面，本文将简略介绍搭建过程，主要内容是搭建过程中出现的问题解决方法。&lt;br&gt;&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;https://hexo.io/zh-cn/docs/&lt;/a&gt; hexo官方文档&lt;br&gt;&lt;a href=&quot;https://c-axis.github.io/&quot;&gt;https://c-axis.github.io/&lt;/a&gt; 博客地址&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="测试" scheme="https://lsyooz.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>就这么说说</title>
     <link href="https://lsyooz.github.io/2020/09/06/name/"/>
     <id>https://lsyooz.github.io/2020/09/06/name/</id>
     <published>2020-09-06T05:57:27.000Z</published>
-    <updated>2020-09-07T13:24:59.102Z</updated>
+    <updated>2020-09-08T12:49:40.268Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><p>正文就随便写写吧。微笑。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">pipeline &#123;</span><br><span class="line">  agent any</span><br><span class="line">  stages &#123;</span><br><span class="line">    stage(&#x27;Example&#x27;) &#123;</span><br><span class="line">      input &#123;</span><br><span class="line">        message <span class="string">&quot;Should we continue?&quot;</span></span><br><span class="line">        ok <span class="string">&quot;Yes, we should.&quot;</span></span><br><span class="line">        submitter <span class="string">&quot;alice,bob&quot;</span></span><br><span class="line">        parameters &#123;</span><br><span class="line">          string(name: &#x27;PERSON&#x27;, defaultValue: &#x27;Mr Jenkins&#x27;, description: &#x27;Who should I say hello to?&#x27;)</span><br><span class="line">             &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      steps &#123;</span><br><span class="line">         cho <span class="string">&quot;Hello, $&#123;PERSON&#125;, nice to meet you.&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h3><p>正文就随便写写吧。微笑。 “文章”的“章”字，是个会意字，从音从十。古代奏音乐，连奏十段才能结束（十，数之终也），这十段乐就是一章。所以，文章文章，也有段落。文章既从“音乐”里会意出来，应是用文字表达出来的东西，读起来如音乐一样美妙无穷、悦耳动听的文字，传诵开来，才配得上“文章”一词的真正含义。 文”即“纹”，指“纹路”、“纹样”。“章”本指“屏蔽”，转指“外表”。“文章”原义指“有纹样的表面”，诸如服装上绣绘的龙凤图样、皮肤上针刺的花卉图案，等等。即其原义是指直接构成视觉形象的图样。后指文字所描绘出来的事物图样，需要大脑“解码”才能完整呈现的间接的事物形象。</p><p>⑴原指文辞，现从写作的角度与“文学”区分，指篇幅不很长而独立成篇的文字。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">pipeline &#123;</span><br><span class="line">  agent any</span><br><span class="line">  stages &#123;</span><br><span class="line">    stage(&#x27;Example&#x27;) &#123;</span><br><span class="line">      input &#123;</span><br><span class="line">        message <span class="string">&quot;Should we continue?&quot;</span></span><br><span class="line">        ok <span class="string">&quot;Yes, we should.&quot;</span></span><br><span class="line">        submitter <span class="string">&quot;alice,bob&quot;</span></span><br><span class="line">        parameters &#123;</span><br><span class="line">          string(name: &#x27;PERSON&#x27;, defaultValue: &#x27;Mr Jenkins&#x27;, description: &#x27;Who should I say hello to?&#x27;)</span><br><span class="line">             &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      steps &#123;</span><br><span class="line">         cho <span class="string">&quot;Hello, $&#123;PERSON&#125;, nice to meet you.&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h3 id=&quot;小标题&quot;&gt;&lt;a href=&quot;#小标题&quot; class=&quot;headerlink&quot; title=&quot;小标题&quot;&gt;&lt;/a&gt;小标题&lt;/h3&gt;&lt;p&gt;正文就随便写写吧。微笑。&lt;/p&gt;
-&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td clas</summary>
+    <summary type="html">&lt;h3 id=&quot;小标题&quot;&gt;&lt;a href=&quot;#小标题&quot; class=&quot;headerlink&quot; title=&quot;小标题&quot;&gt;&lt;/a&gt;小标题&lt;/h3&gt;&lt;p&gt;正文就随便写写吧。微笑。 “文章”的“章”字，是个会意字，从音从十。古代奏音乐，连奏十段才能结束（十，数之终也），这十段乐就是一章。</summary>
       
     
     
